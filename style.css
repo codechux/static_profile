@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.profile-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.email {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.goals {
+  text-align: left;
+}
+
+h5 {
+  margin: 10px 0;
+}
+
+.goals h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.goals ol {
+  padding-left: 20px;
+}
+
+.goals li {
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .tag {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    overflow: auto;
+  }
+}

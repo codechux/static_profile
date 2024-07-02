@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Static Website</title>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="image/profile_img.jpg"
+        alt="slackProfilePicture"
+        class="avatar"
+        data-testid="slackProfilePicture"
+      />
+    </div>
+    <div class="container">
+      <h1 data-testid="slackDisplayName">Chux</h1>
+      <p class="email" data-testid="slackEmail">Chuxoguh@gmail.com</p>
+      <p class="tag">
+        <span data-testid="currentDay" id="day">Day</span>
+        <span data-testid="currentTimeUTC" id="time">Time</span>
+      </p>
+
+      <div class="goals">
+        <h4 data-testid="">My Goals in Tech Field</h4>
+        <ul>
+          <li>Be an HNG Finalist and Mentor</li>
+          <li>Start a Tech Ed Company</li>
+          <li>Make Impact around me</li>
+          <li>Create Tech Contents</li>
+          <li>Learn New Technologies and create world class solutions</li>
+        </ul>
+      </div>
+      <section>
+        <h5>Links to help you Navigate my profile</h5>
+        <div class="link">
+          <a
+            data-testid="hngLink"
+            href="https://hng.tech/learn"
+            target="_blank"
+          >
+            <button class="btn">HNG</button>
+          </a>
+
+          <a
+            data-testid="keywordLink"
+            href="https://keyword.dog"
+            target="_blank"
+            ><button class="btn">Keyword Dog</button></a
+          >
+
+          <a
+            data-testid="scrapeanywebLink"
+            href="https://scrapeanyweb.site"
+            target="_blank"
+            ><button class="btn">ScrapeAnyWeb</button></a
+          >
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
